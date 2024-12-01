@@ -13,6 +13,7 @@ fn main() {
 
     match solution_to_run.as_str() {
         "2024-day01" => (part_01_result, part_02_result) = solutions::year_2024::day01::solve(),
+        "2024-day02" => (part_01_result, part_02_result) = solutions::year_2024::day02::solve(),
         _ => println!("No solution implemented for {solution_to_run} \n")
     }
 
