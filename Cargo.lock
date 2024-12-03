@@ -6,7 +6,6 @@ version = 4
 name = "advent-of-code-rust"
 version = "0.1.0"
 dependencies = [
- "aho-corasick",
  "regex",
 ]
 
