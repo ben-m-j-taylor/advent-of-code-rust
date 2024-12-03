@@ -1,6 +1,14 @@
 use std::fs::File;
-use std::io::{self, BufRead};
+use std::io::{self, BufRead, Read};
 use std::path::Path;
+use std::fs;
+
+pub fn read_file_to_string<P>(filename: P) -> String
+where
+    P: AsRef<Path>,
+{
+    fs::read_to_string(filename).expect("Unable to read file")
+}
 
 fn read_lines<P>(filename: P) -> io::Result<io::Lines<io::BufReader<File>>>
 where
