@@ -2,7 +2,7 @@ use regex::Regex;
 use crate::util::read_file_to_string;
 
 pub fn solve() -> (i64, i64) {
-    const FILE_PATH: &str = "./input_data/2024/day_03/test-input.txt";
+    const FILE_PATH: &str = "./input_data/2024/day03/full-input.txt";
 
     let file_contents = read_file_to_string(FILE_PATH);
 
